@@ -1,0 +1,40 @@
+{
+    "name": "HomoRAFT_dunhuang-M",
+    "dataset": "dunhuang",
+    "gpus": [0, 1],
+
+    "use_var": true,
+    "var_min": 0,
+    "var_max": 10,
+    "pretrain": "resnet34",
+    "initial_dim": 64,
+    "block_dims": [64, 128, 256],
+    "radius": 4,
+    "dim": 128,
+    "num_blocks": 2,
+    "iters": 12,
+
+    "image_size": [288, 960],
+    "scale": 0,
+    "batch_size": 8,
+    "epsilon": 1e-8,
+    "lr": 1e-4,
+    "wdecay": 1e-5,
+    "dropout": 0,
+    "clip": 1.0,
+    "gamma": 0.85,
+    "num_steps": 50000,
+    
+    "restore_ckpt": null,
+    "coarse_config": null,
+    "model": "HomoRAFT",
+    "train_dstype": "train",
+    "val_freq": 500,
+    "ckpt_load_mode": "load_model_only",
+
+    "small": false,
+    "mixed_precision": false,
+    "strict_load": false,
+    "ce_weight":0.8,
+    "frozen": true
+}

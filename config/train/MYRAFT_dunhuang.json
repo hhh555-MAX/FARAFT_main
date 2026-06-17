@@ -1,0 +1,40 @@
+{
+    "name": "MYRAFT_C-T-TSKH_raft-dunhuang-M",
+    "dataset": "dunhuang",
+    "gpus": [0, 1, 2, 3],
+
+    "use_var": true,
+    "var_min": 0,
+    "var_max": 10,
+    "pretrain": "resnet34",
+    "initial_dim": 64,
+    "block_dims": [64, 128, 256],
+    "radius": 4,
+    "dim": 128,
+    "num_blocks": 1,
+    "iters": 12,
+
+    "image_size": [288, 960],
+    "scale": 0,
+    "batch_size": 1,
+    "epsilon": 1e-8,
+    "lr": 2e-4,
+    "wdecay": 1e-5,
+    "dropout": 0,
+    "clip": 1.0,
+    "gamma": 0.85,
+    "num_steps": 100000,
+    
+    "restore_ckpt": null,
+    "coarse_config": null,
+    "model": "MYRAFT",
+    "train_dstype": "train",
+    "val_freq": 1000,
+    "ckpt_load_mode": "load_model_only",
+
+    "small": false,
+    "mixed_precision": false,
+    "refine_blk": "SepConvGRU",
+    "ce_weight": 1,
+    "strict_load": false
+}

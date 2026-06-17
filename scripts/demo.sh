@@ -1,0 +1,3 @@
+python demo.py --cfg config/eval/dunhuang.json --model RAFT --restore_ckpt models/raft-sintel.pth
+python demo.py --cfg config/eval/dunhuang.json --model GCSRAFT_certainty --restore_ckpt checkpoints/GCSRAFT_certainty_C-T-TSKH_raft-megadepth-dunhuang-M_init_certainty/2024-12-10_20-28-00/total_steps_3999_EPE_0.132
+python demo.py --cfg config/eval/dunhuang.json --model HomoRAFT --restore_ckpt checkpoints/HomoRAFT_dunhuang-M/2025-05-27_20-34-48/total_steps_48499_EPE_0.137
